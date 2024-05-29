@@ -6,6 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       body: SafeArea(
           child: Center(
         child: Column(
@@ -66,6 +67,21 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 70),
+            Container(
+              width: 224,
+              height: 50,
+              child: ElevatedButton(
+                onPressed: (){},
+                child: Text('Update Profile', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: whiteColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16)
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       )),
